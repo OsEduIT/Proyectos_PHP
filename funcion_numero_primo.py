@@ -7,17 +7,17 @@ Created on Mon May 11 21:11:31 2020
 #Números primos
 
 def isPrime(num):
-    if num < 2:     #si es menos que 2 no es primo, por lo tanto devolverá Falso
+    if num < 2:     
      return False
-    for i in range(2, num):  #un rango desde el dos hasta el numero que nosotros elijamos
-      if num % i == 0:    #si el resto da 0 no es primo, por lo tanto devuelve Falso
+    for i in range(2, num):  
+      if num % i == 0:    
        return False
-    return True    #de lo contrario devuelve Verdadero
+    return True    
 k=True
 while k==True:
  n = int(input("ingrese un número: "))
  n1 = input("Presione e para salir o enter para continuar  ")
- x = isPrime(n)    #para probarlo llamamos a la función
+ x = isPrime(n)    
  lista=[]
  if x==True:
     print("El número ",n, "es Primo." )
